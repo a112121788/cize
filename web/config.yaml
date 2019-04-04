@@ -17,6 +17,7 @@ mvc:
     get /api: ./api
     post /api/token: ./api token
     post /api/projects/{project}/jobs/{job}/trigger: ./api trigger
+    get /api/projects/{project}/jobs/{job}/trigger: ./api trigger
     get /api/projects: ./api projects
     get /api/records: ./api serverRecords
     get /api/projects/{project}: ./api project
@@ -27,6 +28,7 @@ mvc:
     get /api/projects/{project}/jobs/{job}/records/{sn:^[0-9]+$}: ./api record
     get /api/projects/{project}/jobs/{job}/records/{sn:^[0-9]+$}/console: ./api console
     post /api/projects/{project}/jobs/{job}/records/{sn:^[0-9]+$}/rerun: ./api rerun
+    get /api/projects/{project}/jobs/{job}/records/{sn:^[0-9]+$}/rerun: ./api rerun
 
 public: 
   ^/bootstrap(.*): ../node_modules/bootstrap/dist
