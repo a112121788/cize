@@ -5,7 +5,7 @@
  * workspace：工作目录，默认为 cizefile.js 所在目录
  **/
 cize.config({
-  secret: '12345',
+  // secret: '12345',
   //mode: 'new-process'
 });
 
